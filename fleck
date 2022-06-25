@@ -1,0 +1,215 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local script1 = Instance.new("TextButton")
+local script2 = Instance.new("TextButton")
+local script3 = Instance.new("TextButton")
+local script4 = Instance.new("TextButton")
+local script5 = Instance.new("TextButton")
+local script6 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+main.Position = UDim2.new(0.190883189, 0, 0.330733269, 0)
+main.Size = UDim2.new(0, 473, 0, 262)
+main.Active = true
+main.Draggable = true
+
+Label.Name = "Label"
+Label.Parent = main
+Label.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+Label.Size = UDim2.new(0, 473, 0, 50)
+Label.Font = Enum.Font.SourceSans
+Label.Text = "KennethWinters41's Swear Gui"
+Label.TextColor3 = Color3.fromRGB(0, 0, 0)
+Label.TextSize = 14.000
+
+script1.Name = "script1"
+script1.Parent = main
+script1.BackgroundColor3 = Color3.fromRGB(136, 136, 136)
+script1.Position = UDim2.new(0, 0, 0.190839693, 0)
+script1.Size = UDim2.new(0, 200, 0, 50)
+script1.Font = Enum.Font.SourceSans
+script1.Text = "say nigga"
+script1.TextColor3 = Color3.fromRGB(0, 0, 0)
+script1.TextSize = 14.000
+script1.MouseButton1Down:Connect(function()
+	-- Chat bypass script by Kaid#0001 :3
+
+	local message = "nigga"
+
+	math.randomseed(tick())
+	local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+
+	local function bypass()
+		ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+		ChatMain.MessagesChanged:fire(math.random(100000,1000000))
+	end
+
+	for v in message:gmatch"." do
+		wait(.5)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
+		wait(.5)
+		bypass()
+	end
+end)
+
+script2.Name = "script2"
+script2.Parent = main
+script2.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+script2.Position = UDim2.new(0.577167034, 0, 0.190839693, 0)
+script2.Size = UDim2.new(0, 200, 0, 50)
+script2.Font = Enum.Font.SourceSans
+script2.Text = "Say fuck"
+script2.TextColor3 = Color3.fromRGB(0, 0, 0)
+script2.TextSize = 14.000
+script2.MouseButton1Down:Connect(function()
+	-- Chat bypass script by Kaid#0001 :3
+
+	local message = "fuck"
+
+	math.randomseed(tick())
+	local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+
+	local function bypass()
+		ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+		ChatMain.MessagesChanged:fire(math.random(100000,1000000))
+	end
+
+	for v in message:gmatch"." do
+		wait(.5)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
+		wait(.5)
+		bypass()
+	end	
+end)
+
+script3.Name = "script3"
+script3.Parent = main
+script3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+script3.Position = UDim2.new(0, 0, 0.492366403, 0)
+script3.Size = UDim2.new(0, 200, 0, 50)
+script3.Font = Enum.Font.SourceSans
+script3.Text = "Say Faggot"
+script3.TextColor3 = Color3.fromRGB(0, 0, 0)
+script3.TextSize = 14.000
+script3.MouseButton1Down:Connect(function()
+	-- Chat bypass script by Kaid#0001 :3
+
+	local message = "faggot"
+
+	math.randomseed(tick())
+	local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+
+	local function bypass()
+		ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+		ChatMain.MessagesChanged:fire(math.random(100000,1000000))
+	end
+
+	for v in message:gmatch"." do
+		wait(.5)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
+		wait(.5)
+		bypass()
+	end
+end)
+
+script4.Name = "script4"
+script4.Parent = main
+script4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+script4.Position = UDim2.new(0.577167034, 0, 0.492366403, 0)
+script4.Size = UDim2.new(0, 200, 0, 50)
+script4.Font = Enum.Font.SourceSans
+script4.Text = "Say pussy"
+script4.TextColor3 = Color3.fromRGB(0, 0, 0)
+script4.TextSize = 14.000
+script4.MouseButton1Down:Connect(function()
+	-- Chat bypass script by Kaid#0001 :3
+
+	local message = "pussy"
+
+	math.randomseed(tick())
+	local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+
+	local function bypass()
+		ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+		ChatMain.MessagesChanged:fire(math.random(100000,1000000))
+	end
+
+	for v in message:gmatch"." do
+		wait(.5)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
+		wait(.5)
+		bypass()
+	end
+end)
+
+script5.Name = "script5"
+script5.Parent = main
+script5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+script5.Position = UDim2.new(0, 0, 0.809160292, 0)
+script5.Size = UDim2.new(0, 200, 0, 50)
+script5.Font = Enum.Font.SourceSans
+script5.Text = "Say Bitch"
+script5.TextColor3 = Color3.fromRGB(0, 0, 0)
+script5.TextSize = 14.000
+script5.MouseButton1Down:Connect(function()
+	-- Chat bypass script by Kaid#0001 :3
+
+	local message = "bitch"
+
+	math.randomseed(tick())
+	local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+
+	local function bypass()
+		ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+		ChatMain.MessagesChanged:fire(math.random(100000,1000000))
+	end
+
+	for v in message:gmatch"." do
+		wait(.5)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
+		wait(.5)
+		bypass()
+	end	
+end)
+
+script6.Name = "script6"
+script6.Parent = main
+script6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+script6.Position = UDim2.new(0.577167034, 0, 0.809160292, 0)
+script6.Size = UDim2.new(0, 200, 0, 50)
+script6.Font = Enum.Font.SourceSans
+script6.Text = "Say Retard"
+script6.TextColor3 = Color3.fromRGB(0, 0, 0)
+script6.TextSize = 14.000
+script6.MouseButton1Down:Connect(function()
+	-- Chat bypass script by Kaid#0001 :3
+
+	local message = "retard"
+
+	math.randomseed(tick())
+	local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+
+	local function bypass()
+		ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+		ChatMain.MessagesChanged:fire(math.random(100000,1000000))
+	end
+
+	for v in message:gmatch"." do
+		wait(.5)
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
+		wait(.5)
+		bypass()
+	end
+end)
